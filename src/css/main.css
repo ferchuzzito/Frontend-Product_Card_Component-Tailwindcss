@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen w-screen flex flex-col justify-center items-center font-Montserrat bg-Cream text-sm;
+}
+
+.product-card {
+  /*@apply bg-White mx-4 pb-4 mb-4 rounded-lg;*/
+  @apply bg-White max-w-[342px] rounded-lg mb-5;
+  @apply lg:max-w-[600px] lg:flex;
+}
+
+.product-card__image {
+  @apply w-auto h-[240px] overflow-hidden pb-5 bg-Product-mobile  bg-no-repeat bg-contain rounded-t-lg;
+  @apply lg:bg-Product-desktop lg:w-[1000px] lg:h-[450px] lg:bg-contain lg:rounded-r-lg;
+}
+
+.product-card__type {
+  @apply uppercase tracking-[0.42em] mt-4 text-DarkGrayishBlue;
+}
+.product-card__name {
+  @apply mt-[10px] leading-[2.1rem] font-Fraunces text-[32px] font-bold;
+  @apply lg:mt-[19px] lg:leading-[2rem];
+}
+.product-card__description {
+  @apply mt-[17px] font-Montserrat text-sm leading-[1.4rem] text-DarkGrayishBlue;
+  @apply lg:mt-[20px];
+}
+
+.product-card__price {
+  @apply mt-[17px] flex items-center;
+  @apply lg:mt-[23px];
+}
+
+.product-card__price-discount {
+  @apply text-DarkCyan font-Fraunces text-[32px] font-bold;
+}
+
+.product-card__price-before {
+  @apply ml-[1.2rem] line-through font-Montserrat text-sm text-DarkGrayishBlue;
+}
+
+.product-card__btn {
+  @apply mt-[19px] py-3 bg-DarkCyan hover:bg-DarkCyanD hover:cursor-pointer text-White text-center rounded-lg flex items-center justify-center space-x-2;
+}
+
+.attribution {
+  @apply text-xs text-center;
+}
+.attribution a {
+  @apply text-blue;
+}
